@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แผนภาพจำลอง 3D ฐานเรียนรู้</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- โหลด Three.js จาก CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+</head>
+<body>
+    <div id="canvas-container"></div>
+
+    <!-- กล่องแสดงข้อมูลเมื่อคลิกที่หมุด -->
+    <div id="info-panel" class="hidden">
+        <h2 id="info-title">ชื่อฐานเรียนรู้</h2>
+        <p id="info-desc">รายละเอียด...</p>
+        <button id="close-btn">ปิด</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
