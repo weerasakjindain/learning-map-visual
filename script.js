@@ -33,7 +33,7 @@ function init() {
     // 5. โหลดภาพ PNG แผนภาพ (จำลองเป็นระนาบ Plane 3D)
     // ถ้านำภาพมาวาง ให้เปลี่ยนชื่อไฟล์ 'map-image.png' ให้ตรงกับไฟล์จริงของคุณ
     const textureLoader = new THREE.TextureLoader();
-    textureLoader.load('map-image.png', (texture) => {
+    textureLoader.load('learningmap.png', (texture) => {
         const planeGeo = new THREE.PlaneGeometry(10, 10);
         const planeMat = new THREE.MeshStandardMaterial({ map: texture, side: THREE.DoubleSide });
         const plane = new THREE.Mesh(planeGeo, planeMat);
